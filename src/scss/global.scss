@@ -27,3 +27,42 @@ a {
     transform: scale(1);
   }
 }
+
+h1 {
+  margin-left: 5rem;
+  font-size: 5rem;
+  font-weight: bolder;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+p.quote {
+  text-align: justify;
+  font-size: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  font-style: oblique;
+}
+
+p.author {
+  text-align: justify;
+  font-size: 3rem;
+  margin-left: 5rem;
+  margin-right: 10rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.quotes-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 2rem;
+  text-decoration: underline;
+  &__topquote {
+    justify-self: start;
+  }
+
+
+}
