@@ -16,37 +16,35 @@
 
 <body>
 
-  <header>
-    <nav>
-      <ul class="quotes-menu">
-        <li><a class="__topquote" href="../index.html">Topquote</a></li>
-        <li> <a href="./citation2.html">Citation #2</a></li>
-        <li> <a href="./citation3.html">Citation #3</a></li>
-        <li> <a href="./citation4.html">Citation #4</a></li>
-        <li> <a href="./citation5.html">Citation #5</a></li>
-        <li> <a href="./citation6.html">Citation #6</a></li>
-        <li> <a href="./citation7.html">Citation #7</a></li>
-        <li> <a href="./citation8.html">Citation #8</a></li>
-        <li> <a href="./citation9.html">Citation #9</a></li>
-      </ul>
+  <header class="menu">
+    <a class="menu-logo" href="/">TopiQuote</a>
+    <nav class="menu-list">
+      <a class="menu-item" href="./citation2.html">Citation #2</a>
+      <a class="menu-item" href="./citation3.html">Citation #3</a>
+      <a class="menu-item" href="./citation4.html">Citation #4</a>
+      <a class="menu-item" href="./citation5.html">Citation #5</a>
+      <a class="menu-item" href="./citation6.html">Citation #6</a>
+      <a class="menu-item menu-item--current" href="./citation7.html">Citation #7</a>
+      <a class="menu-item" href="./citation8.html">Citation #8</a>
+      <a class="menu-item" href="./citation9.html">Citation #9</a>
     </nav>
-
-
   </header>
-
-  <h1><a href="./citation7.html">Citation #7</a></h1>
-  <main>
-    <p class="quote">Le premier savoir est le savoir de mon ignorance : c'est le début de l'intelligence. 
-    </p>
-    <p class="author">Socrate
-    </p>
+  </header>
+  <main class="content">
+    <section class="content-box">
+      <h1 class="content-title">Citation #7</h1>
+      <blockquote class="content-quote">
+        <p>Le premier savoir est le savoir de mon ignorance : c'est le début de l'intelligence.</p>
+      </blockquote>
+      <div class="content-author">
+        <button class="content-btn" id="author-btn">Révéler l'auteur</button>
+        <span class="content-name" id="author-name">Socrate</span>
+      </div>
+      <footer class="content-action">
+        <a class="btn" href="./citation8.html">Citation suivante</a>
+      </footer>
+    </section>
   </main>
-
-  <footer>
-    <nav>
-      <a class="quotes-menu" href="./citation8.html">Citation suivante</a>
-    </nav>
-  </footer>
 </body>
 
 </html>

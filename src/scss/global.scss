@@ -86,7 +86,7 @@ p.author {
 
 .menu-container {
   display: flex;
-  flex-direction: column;
+  flex-grow: inherit;
   font-size: 2rem;
   width: 15%;
   text-align: center;
