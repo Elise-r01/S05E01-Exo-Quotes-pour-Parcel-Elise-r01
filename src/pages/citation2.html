@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Citation #2 - TopiQuote</title>
+  <title>Citation #1 - TopiQuote</title>
   <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../scss/index.scss">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,40 +12,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Amita&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <script type="module" defer src="../js/app.js"></script>
 </head>
-
 <body>
-
-  <header>
-    <nav>
-      <ul class="quotes-menu">
-        <li><a class="__topquote" href="../index.html">Topquote</a></li>
-        <li> <a href="./citation1.html">Citation #1</a></li>
-        <li> <a href="./citation2.html">Citation #2</a></li>
-        <li> <a href="./citation3.html">Citation #3</a></li>
-        <li> <a href="./citation4.html">Citation #4</a></li>
-        <li> <a href="./citation5.html">Citation #5</a></li>
-        <li> <a href="./citation6.html">Citation #6</a></li>
-        <li> <a href="./citation7.html">Citation #7</a></li>
-        <li> <a href="./citation8.html">Citation #8</a></li>
-        <li> <a href="./citation9.html">Citation #9</a></li>
-      </ul>
+  <header class="menu">
+    <a class="menu-logo" href="/">TopiQuote</a>
+    <nav class="menu-list">
+      <a class="menu-item" href="/">Citation #1</a>
+      <a class="menu-item menu-item--current" href="./citation2.html">Citation #2</a>
+      <a class="menu-item" href="./citation3.html">Citation #3</a>
+      <a class="menu-item" href="./citation4.html">Citation #4</a>
+      <a class="menu-item" href="./citation5.html">Citation #5</a>
+      <a class="menu-item" href="./citation6.html">Citation #6</a>
+      <a class="menu-item" href="./citation7.html">Citation #7</a>
+      <a class="menu-item" href="./citation8.html">Citation #8</a>
+      <a class="menu-item" href="./citation9.html">Citation #9</a>
     </nav>
-
-
   </header>
-
-  <h1><a href="./citation2.html">Citation #2</a></h1>
-  <main>
-    <p class="quote">La beauté est dans les yeux de celui qui regarde.
-    </p>
-    <p class="author">Oscar Wilde</p>
+  <main class="content">
+    <section class="content-box">
+        <h1 class="content-title">Citation #2</h1>
+        <blockquote class="content-quote">
+          <p>La beauté est dans les yeux de celui qui regarde.</p>
+        </blockquote>
+        <div class="content-author">
+          <button class="content-btn" id="author-btn">Révéler l'auteur</button>
+          <span class="content-name" id="author-name">Oscar Wilde</span>
+        </div>
+      <footer class="content-action">
+        <a class="btn" href="./citation3.html">Citation suivante</a>
+      </footer>
+    </section>
   </main>
-
-  <footer>
-    <nav>
-      <a class="quotes-menu" href="./citation3.html">Citation suivante</a>
-    </nav>
-  </footer>
 </body>
-
 </html>
