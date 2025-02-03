@@ -19,11 +19,14 @@ html {
 }
 
 body {
+  display: flex;
+  flex-grow: 2;
   line-height: 1.4;
   font-family: 'Poppins', sans-serif;
   background-image: url(/src/img/background.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+
 
 }
 
@@ -46,9 +49,9 @@ a {
 }
 
 main {
-  display: flex;
-  flex-grow: 2;
-  flex-direction: column;
+  // display: flex;
+  // flex-grow: 2;
+  // flex-direction: column;
   margin-left: 50rem;
   margin-right: 20rem;
   background-color: #0F1A63;
@@ -84,8 +87,8 @@ p {
   flex-grow: 1;
   flex-direction: column;
   font-size: 2rem;
-  width: 15%;
-  height: 100%;
+  width: 15rem;
+  // height: 100%;
   font-weight: bold;
   font-size: 1.5em;
   padding: 2rem 0;
@@ -96,6 +99,32 @@ p {
 
 }
 
+.menu-list {
+  height: auto;
+}
+
+
+
+// div qui contient révéler l auteur + nom  auteur
+.content-author {
+  display: flex;
+  background-size: cover;
+  text-align: right;
+  // align-items: center;
+  font-size: 2rem;
+  // justify-content: center;
+  color: #0d0747;
+  font-weight: bold;
+  padding: 1rem;
+  position: relative;
+
+  &.on {
+    display: inline-block;
+    animation: pop .3s ease 0s 1;
+  }
+}
+
+// bouton révéler l'auteur
 .content-btn {
   flex-grow: 1;
   display: flex;
@@ -110,40 +139,34 @@ p {
   font-weight: bold;
   background-color: #c96894;
   padding: 1rem;
-  
-}
-.content-author{
-    display: flex;
-  background-size: cover;
-  text-align: right;
-  // align-items: center;
-  font-size: 2rem;
-  // justify-content: center;
-  color: #0d0747;
-  font-weight: bold;
-  padding: 1rem;
-  position: relative;
-  &.on {
-    display: inline-block;
-    animation: pop .3s ease 0s 1;
-}
+  &.off {
+    display: none;
+  }
+
 }
 
+
+// nom auteur
 .content-name {
-   font-size: 1.5rem;
+  font-size: 1.5rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
-text-align: center;
+  text-align: center;
   color: #c96894;
   font-weight: bold;
   background-color: #0F1A63;
   position: absolute;
   justify-content: center;
   align-items: center;
+
   &.on {
     display: inline-block;
     animation: pop .3s ease 0s 1;
-}
+  }
+
+  &.off {
+    display: none;
+  }
 
 }
 
@@ -159,11 +182,13 @@ text-align: center;
   border: 0;
   width: 100%;
   transition: background-color .5s;
+
   &:hover {
-      color: white;
-      background-color: var(--color-action);
+    color: white;
+    background-color: var(--color-action);
   }
+
   &.off {
     display: none;
-}
+  }
 }
